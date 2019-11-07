@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jacques Derrida</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --altura: 70vh;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 16px;
+        }
+        header{
+            width: 100%;
+            height: var(--altura);
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header div{
+            width: 50%;
+            height: var(--altura);
+        }
+        heaer div img{
+            position: relative;
+            width: 50%;
+            height: var(--altura);
+        }
+
+        .bloque_izq {
+            background: purple;
+        }
+
+        .bloque_izq img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bloque_der {
+            background: red;
+        }
+
+        .bloque_der img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 5vh;
+            width: 100%;
+            color: white;
+        }
+        article {
+            font-family: 'Roboto Slab', serif;
+            width: 35.4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            padding: 8vw 0;
+            color: orange;
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid orange;
+            hyphens: auto;
+            line-height: 1.4em;
+            text-align: justify;
+        }
+        article #cos{
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+            
+        }
+        article #cos>p:first-child::first-letter{
+            font-family: 'Roboto Slab', serif;
+            font-size: 5em;
+            float: left;
+            margin-top: -0.15em;
+            margin-right: 0.2em;
+            padding-bottom: 0;
+            padding-right: 0.2em;
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        }
+        .circulo img, .hexagon img{
+           mix-blend-mode: hard-light;
+        }
+        .circulo, .circulo img{
+            border-radius: 50%;
+        }
+        .circulo{
+            max-width: 20em;
+            float: left;
+            margin-left: -8em;
+            shape-margin: 1em;
+            shape-outside: circle(50%) border-box;
+        }
+        .hexagon, .hexagon img{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 2em;
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 12px;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloque_izq">
+            <img src="img/un.jpg">
+        </div>
+        <div class="bloque_der">
+            <img src="img/dos.jpg">
+        </div>
+        <h1>Jaques Derrida <br>Filósofo</h1>
+    </header>
+    <article>
+        <p>Nació en el seno de una familia judía sefardí, originaria de Toledo y de clase media acomodada. Sufrió la represión del gobierno de Vichy y fue expulsado en octubre de 1942 de su instituto argelino por motivos racistas. Ese trauma, que recordaría toda su vida, le ayudaría a construir su personalidad.</p>
+        <div id="cos">
+        <p>Como compensación, de joven participó en numerosas competiciones deportivas, y soñó con ser futbolista profesional. Pero ya en esa época descubrió y leyó con pasión no solo a los novelistas clásicos sino también a filósofos y escritores como Albert Camus, Antonin Artaud, Paul Valéry, Rousseau, Nietzsche y André Gide.Pasó a Francia. Tras cuatro años de clases preparatorias literarias en el liceo Luis el Grande de París, y con la nostalgia de su lugar natal, ingresó en la Escuela Normal Superior francesa en 1952; allí descubrió a Kierkegaard, a Martin Heidegger y a Louis Althusser. Pronto se hizo gran amigo de su tutor Louis Althusser, un afecto que duró de por vida a pesar de las diferencias ideológicas y de la tragedia del segundo. Este dijo que su alumno era un «gigante» de la filosofía francesa. Otro de sus docentes fue Maurice de Gandillac.</p>
+        <div class="circulo">
+        <img src="img/tres.jpg" >
+        </div>
+
+        <p>Después, obtuvo una beca para estudiar en la Universidad Harvard (posteriormente dio clases en universidades de los Estados Unidos, principalmente Universidad Johns Hopkins, Universidad Yale y Universidad de Nueva York). Se casó en junio de 1957 con Marguerite Aucouturier, traductora y futura psicoanalista (con quien tuvo dos hijos, Pierre, nacido en 1963, y Jean, en 1967). Meses después volvió a Argelia, en calidad de recluta para cumplir su servicio militar. Solicitó ser destinado como maestro en una escuela para hijos de soldados, en Koléa, cerca de Argel. Durante más de dos años fue soldado, pero sin usar el uniforme militar, y enseñó francés e inglés a jóvenes argelinos y franceses. En la antigua colonia trató al futuro sociólogo Pierre Bourdieu. Severo crítico de la política de Francia en Argelia, soñó con una forma de independencia que permitiese la convivencia entre argelinos y franceses.</p>
+        <div class="hexagon">
+        <img src="img/cuatre.jpg" >
+        </div>
+
+        <p>En 1959 enseñó por vez primera en el liceo de Le Mans. En 1964 logró el premio Jean Cavaillès de Epistemología por su traducción de El origen de la geometría de Edmund Husserl, con una enorme introducción. En 1965, a la sombra de Althusser, obtuvo el cargo de director de estudios de la Escuela Normal Superior, en el departamento de Filosofía. Tuvo el apoyo, toda la vida, del riguroso historiador de la ciencia Georges Canguilhem.</p>
+
+        <p>Su participación, con un grupo de destacados intelectuales —Jean Hyppolite, Georges Poulet, Lucien Goldmann, Roland Barthes, Jean-Pierre Vernant o Jacques Lacan—, en un encuentro sobre las ciencias humanas francesas en la Universidad Johns Hopkins (Baltimore), fue decisiva.10​ Se iniciaron sus continuos viajes a los Estados Unidos, donde consideraba tener mayor libertad y donde su pensamiento influyó notablemente de por vida. En 1967 se publicaron sus tres primeros libros. Fue un admirador de la obra de Maurice Blanchot, a quien dedicó importantes textos; y se asoció progresivamente con Jean-Luc Nancy, Philippe Lacoue-Labarthe y Sarah Kofman en diversos proyectos, por ejemplo editoriales. La Editorial Galilée, de 1971, se convertirá años después no solo en la "voz" de la Deconstrucción, y su seguro lugar para su obra, sino en una empresa selecta, que va acogiendo a grandes figuras de las letras (Bonnefoy, Quignard, Cixous, etc.). Al mismo tiempo, en 1983, fundó el Colegio Internacional de Filosofía. En 1984 lo nombran director de estudios en la Escuela de Altos Estudios en Ciencias Sociales, donde trabajó el resto de su vida. Pues al final le impidieron el acceso al Collège de France, pese a los esfuerzos de Bourdieu o, por ejemplo, Bonnefoy. Murió el 8 de octubre de 2004 en París, víctima de un cáncer pancreático, sin dejar nunca de trabajar vertiginosamente
+        </p>
+        </div>
+    </article>
+</body>
+
+</html>
